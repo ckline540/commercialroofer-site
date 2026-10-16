@@ -26,7 +26,8 @@ p{margin:0}
 .btn.dark{background:var(--ink);color:#fff} .btn.dark:hover{background:#000}
 .btn.ghost{background:transparent;color:var(--ink);border-color:var(--ink)} .btn.ghost:hover{background:var(--ink);color:#fff}
 .btn.ghost.light{color:#fff;border-color:#fff} .btn.ghost.light:hover{background:#fff;color:var(--ink)}
-.btn.sm{font-size:1rem;padding:11px 18px}
+.btn.sm{font-size:1rem;padding:11px 18px;white-space:nowrap}
+@media (max-width:520px){.nav .btn.sm{font-size:.9rem;padding:9px 13px} .nav .logo img{height:28px}}
 .dark{background:var(--char);color:var(--on-char)} .dark .eyebrow{color:var(--on-char-muted)} .dark .lead{color:var(--on-char)}
 .paper{background:var(--paper)}
 
@@ -34,13 +35,13 @@ p{margin:0}
 .nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:saturate(1.3) blur(10px);border-bottom:1px solid var(--line)}
 .nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;height:72px}
 .nav .logo img{height:34px;width:auto}
-.nav ul{list-style:none;margin:0;padding:0;display:flex;gap:26px;align-items:center}
+.nav ul{list-style:none;margin:0;padding:0;display:flex;gap:22px;align-items:center;white-space:nowrap}
 .nav li a{text-decoration:none;font-weight:500;font-size:.95rem;color:var(--ink-2)} .nav li a:hover,.nav li a[aria-current]{color:var(--ink)}
 .nav li a[aria-current]{box-shadow:inset 0 -3px 0 var(--yellow)}
 .nav .cta{display:flex;gap:10px;align-items:center}
 .nav .login{text-decoration:none;font-size:.9rem;font-weight:500;color:var(--ink-2)}
 .burger{display:none;background:none;border:0;width:44px;height:44px;cursor:pointer;color:var(--ink)}
-@media (max-width:900px){
+@media (max-width:1080px){
   .nav ul,.nav .login{display:none} .burger{display:grid;place-items:center}
   .nav.open ul{display:flex;flex-direction:column;align-items:flex-start;gap:0;position:absolute;left:0;right:0;top:72px;background:#fff;border-bottom:1px solid var(--line);padding:8px var(--gutter) 16px}
   .nav.open ul li{width:100%} .nav.open ul li a{display:block;padding:12px 0;font-size:1.05rem;border-bottom:1px solid var(--line)}
