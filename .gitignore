@@ -1,0 +1,4 @@
+_*.html
+_build.py
+.DS_Store
+img/events/
